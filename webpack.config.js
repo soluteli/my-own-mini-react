@@ -11,8 +11,8 @@ config.mode('development')
 //   .add('./examples/react-dom.js')
 
 config
-  .entry('jsx')
-  .add('./examples/jsx.js')
+  .entry('v-dom')
+  .add('./examples/v-dom.js')
 
 config.devtool('cheap-eval-source-map')
 
