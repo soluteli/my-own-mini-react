@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom'
-
+console.log('2')
 const element = {
   type: "div",
   props: {
