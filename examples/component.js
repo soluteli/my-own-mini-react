@@ -30,9 +30,27 @@ class Story extends Component {
     this.state = { likes: Math.ceil(Math.random() * 100) };
   }
   like() {
+    console.log('s', this.state.likes)
     this.setState({
       likes: this.state.likes + 1
     });
+    console.log(this.state.likes)
+    this.setState({
+      likes: this.state.likes + 1
+    });
+    console.log(this.state.likes)
+
+    setTimeout(() => {
+      console.log('timeout',this.state.likes)
+      this.setState({
+        likes: this.state.likes + 1
+      });
+      console.log(this.state.likes)
+      this.setState({
+        likes: this.state.likes + 1
+      });
+      console.log(this.state.likes)
+    }, 0);
   }
   render() {
     const { name, url } = this.props;
